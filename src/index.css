@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  background-color: brown;
+}
+
+.counter {
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+}
+
+.buttons {
+  background: darkgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  
+}
