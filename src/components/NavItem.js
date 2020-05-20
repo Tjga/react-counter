@@ -2,7 +2,11 @@ import React from 'react';
 
 function NavItem(props) {
     return(
-        <h1>hello, {props.name}</h1>
+        <div>
+            <h1>hello, {props.name}</h1>
+            <h1>I am {props.age} years old</h1>
+        </div>
+        
     )
 }
 
