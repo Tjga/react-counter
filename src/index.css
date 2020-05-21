@@ -14,8 +14,6 @@ code {
     monospace;
 }
 
-.app {
-}
 
 .counter {
   display: flex;
@@ -34,4 +32,5 @@ button {
   width: 100px;
   height: 100px;
   font-size: xx-large;
+  border-radius: 32px;
 }
