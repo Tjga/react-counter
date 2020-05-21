@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  
 }
 
 code {
@@ -13,22 +15,23 @@ code {
 }
 
 .app {
-  background-color: brown;
 }
 
 .counter {
-  background-color: cyan;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 23px;
+  font-size: 50px;
 }
 
 .buttons {
-  background: darkgrey;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+button {
+  width: 100px;
+  height: 100px;
   font-size: xx-large;
-  
 }

@@ -9,7 +9,8 @@ class App extends React.Component {
     }
     this.handleClick = this.handleClick.bind(this)
     this.doubleClick = this.doubleClick.bind(this)
-    this.clearClick = this.clearClick.bind(this)  
+    this.clearClick = this.clearClick.bind(this)
+    this.minusClick = this.minusClick.bind(this)
   }
   handleClick() {
     console.log("ADDED 1")
@@ -28,9 +29,18 @@ class App extends React.Component {
     })
   }
   clearClick() {
+    console.log("CLEARED")
     this.setState(prevState => {
       return {
         count: prevState.count = 0
+      }
+    })
+  }
+  minusClick() {
+    console.log("SUBTRACTED")
+    this.setState(prevState => {
+      return {
+        count: prevState.count - 1
       }
     })
   }
@@ -41,6 +51,7 @@ class App extends React.Component {
         <h1>{this.state.count}</h1>
         </div>
         <div className="buttons">
+        <button onClick={this.minusClick}>-1</button>
         <button onClick={this.handleClick}>+1</button>
         <button onClick={this.doubleClick}>2x</button>
         <button onClick={this.clearClick}>clear</button>
