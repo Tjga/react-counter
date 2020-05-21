@@ -1,7 +1,6 @@
 import React from 'react';
 import "./index.css"
 
-
 class App extends React.Component {
   constructor() {
     super()
@@ -31,7 +30,7 @@ class App extends React.Component {
   clearClick() {
     this.setState(prevState => {
       return {
-        count: 0
+        count: prevState.count = 0
       }
     })
   }
@@ -44,10 +43,10 @@ class App extends React.Component {
         <div className="buttons">
         <button onClick={this.handleClick}>+1</button>
         <button onClick={this.doubleClick}>2x</button>
+        <button onClick={this.clearClick}>clear</button>
         </div>
       </div>
     )
   }
-
 }
 export default App;
