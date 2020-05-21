@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  background-image: linear-gradient(to right,rgb(111, 175, 239), cyan);
   
 }
 
@@ -33,4 +33,5 @@ button {
   height: 100px;
   font-size: xx-large;
   border-radius: 32px;
+  background-image: linear-gradient(to right,rgb(111, 175, 239), cyan);
 }
