@@ -11,6 +11,7 @@ class App extends React.Component {
     this.doubleClick = this.doubleClick.bind(this)
     this.clearClick = this.clearClick.bind(this)
     this.minusClick = this.minusClick.bind(this)
+    this.halveClick = this.halveClick.bind(this)
   }
   handleClick() {
     console.log("ADDED 1")
@@ -44,6 +45,14 @@ class App extends React.Component {
       }
     })
   }
+  halveClick() {
+    console.log("HALVED")
+    this.setState(prevState => {
+      return {
+        count: prevState.count / 2
+      }
+    })
+  }
   render() {
     return(
       <div className="app">
@@ -54,6 +63,7 @@ class App extends React.Component {
         <button onClick={this.minusClick}>-1</button>
         <button onClick={this.handleClick}>+1</button>
         <button onClick={this.doubleClick}>2x</button>
+        <button onClick={this.halveClick}>halve</button>
         <button onClick={this.clearClick}>clear</button>
         </div>
       </div>
