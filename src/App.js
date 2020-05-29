@@ -5,14 +5,17 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
+      //sets the state of count as 0
       count: 0
     }
+    // Binds so the code can work. I dont know how tho
     this.handleClick = this.handleClick.bind(this)
     this.doubleClick = this.doubleClick.bind(this)
     this.clearClick = this.clearClick.bind(this)
     this.minusClick = this.minusClick.bind(this)
     this.halveClick = this.halveClick.bind(this)
   }
+  //adds 1 to the count
   handleClick() {
     console.log("ADDED 1")
     this.setState(prevState => {
@@ -21,6 +24,7 @@ class App extends React.Component {
       }
     })
   }
+  // doubles the count
   doubleClick() {
     console.log("DOUBLED")
     this.setState(prevState => {
@@ -29,6 +33,7 @@ class App extends React.Component {
       }
     })
   }
+  //clears the count
   clearClick() {
     console.log("CLEARED")
     this.setState(prevState => {
@@ -37,6 +42,7 @@ class App extends React.Component {
       }
     })
   }
+  //subtracts from the count
   minusClick() {
     console.log("SUBTRACTED")
     this.setState(prevState => {
@@ -45,6 +51,7 @@ class App extends React.Component {
       }
     })
   }
+  // divides the count by 2
   halveClick() {
     console.log("HALVED")
     this.setState(prevState => {
