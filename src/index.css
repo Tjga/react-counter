@@ -35,3 +35,9 @@ button {
   border-radius: 32px;
   background-image: linear-gradient(to right,rgb(111, 175, 239), cyan);
 }
+
+.greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

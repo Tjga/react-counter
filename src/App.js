@@ -73,6 +73,9 @@ class App extends React.Component {
         <button onClick={this.halveClick}>halve</button>
         <button onClick={this.clearClick}>clear</button>
         </div>
+        <div className="greeting">
+          <h2>Have a nice day</h2>
+        </div>
       </div>
     )
   }
